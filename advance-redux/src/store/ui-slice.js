@@ -1,5 +1,5 @@
 const { createSlice } = require("@reduxjs/toolkit");
-const showCart = { showCartIsVisble: false };
+const showCart = { showCartIsVisble: true };
 const uiSlice = createSlice({
 	name: "ui",
 	initialState: showCart,
