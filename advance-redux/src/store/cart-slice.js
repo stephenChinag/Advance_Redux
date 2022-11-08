@@ -25,10 +25,12 @@ const cartSlice = createSlice({
 			const id = action.payload;
 			const exitingItems = state.items.find((item) => item.id === id);
 			state.totalQuantity--;
+
 			if (exitingItems.quantity === 1) {
 				state.items = state.items.filter((item) => item.id !== id);
 			} else {
 				exitingItems.quantity--;
+				exitingItems.totalPrice = exitingItems.totalPrice - newItem.price;
 			}
 		},
 	},
