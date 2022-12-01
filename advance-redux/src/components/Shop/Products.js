@@ -13,6 +13,12 @@ const DUMMY_PRODUCT = [
 		title: "must Reed Book	",
 		description: "just read on and Hands on",
 	},
+	{
+		id: "q3",
+		price: 2,
+		title: "try to study",
+		description: "moving to the start",
+	},
 ];
 const Products = (props) => {
 	return (
